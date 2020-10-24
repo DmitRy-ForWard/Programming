@@ -1,0 +1,6 @@
+﻿  proekt 9.cpp
+D:\КФУ\Программирование\Programming\Practice\09\C++\proekt 9\proekt 9\proekt 9.cpp(22,3): error C2181: недопустимый else без парного if
+D:\КФУ\Программирование\Programming\Practice\09\C++\proekt 9\proekt 9\proekt 9.cpp(23,3): error C2059: синтаксическая ошибка: {
+D:\КФУ\Программирование\Programming\Practice\09\C++\proekt 9\proekt 9\proekt 9.cpp(23,3): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\КФУ\Программирование\Programming\Practice\09\C++\proekt 9\proekt 9\proekt 9.cpp(14,101): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+D:\КФУ\Программирование\Programming\Practice\09\C++\proekt 9\proekt 9\proekt 9.cpp(18,86): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
