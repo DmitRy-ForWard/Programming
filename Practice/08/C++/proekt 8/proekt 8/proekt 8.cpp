@@ -8,7 +8,7 @@ int main()
     setlocale(LC_ALL, "Russian");
     double a, b, c;
     char f;
-    cin >> a >> b >> c;
+    cin >> a >> f >> b;
 
     switch (f)
     {
@@ -21,13 +21,13 @@ int main()
     case '+':
     {
         c = a + b;
-        cout << f;
+        cout << c;
     }
     break;
     case '*':
     {
-        c = a * c;
-        cout << f;
+        c = a * b;
+        cout << c;
     }
     break;
     case '/':
@@ -38,10 +38,12 @@ int main()
         else
         {
             c = a / b;
-            cout << f;
+            cout << c;
         }
         break;
+      
     default:
+          cout << "Некорректный ввод";
     }
     return 0;
 }

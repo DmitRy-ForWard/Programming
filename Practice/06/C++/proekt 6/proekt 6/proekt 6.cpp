@@ -1,51 +1,65 @@
 ﻿#include <iostream>
+#include <locale>
 #include <cmath>
-#include <clocale>
+
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
 
-    double a;
-    double b;
-    double c;
-    double x;
-    double y;
-    double z;
-    cout << "Введите значение a: ";
+    setlocale (LC_ALL, "Russian");
+
+    double a, b, c, x, D, z;
+    cout << "Ввести значение a";
     cin >> a;
-    cout << "Введите значение b: ";
+    cout << "Ввести значение b";
     cin >> b;
-    cout << "Введите значение c: ";
+    cout << "Ввести значение c";
     cin >> c;
+
+    D = b * b - 4 * a * c;
+
     if (a == 0 && b == 0)
     {
         if (c == 0)
+        {
             cout << "Все корни верны";
+        }
         else
+        {
             cout << "Нет корней";
+        }
     }
     else if (a == 0)
     {
         if (c == 0)
-            cout << "Корнем является 0";
+        {
+            cout << "Корень уравнения = 0";
+        }
         else
-            y = -1 * (c / b);
-        cout << "Корень равен" << y << endl;
-
+        {
+            z = -1 * (c / b);
+            cout << "Корень = " << z << endl;
+        }
     }
     else if (b == 0)
     {
         if (c == 0)
+        {
             cout << "Корень уравнения 0";
+        }
         else if ((-1 * (c / a)) > 0)
+        {
             x = sqrt((-1 * (c / a)));
             cout << "Первый корень равен " << x << endl;
-        x = -1 * sqrt((-1 * (c / a)));
+            x = -1 * sqrt((-1 * (c / a)));
             cout << "Второй корень равен " << x << endl;
+        }
         else
-            cout << "Корни невещественные";
+        {
+            cout << "Корней нет";
+        }
+
     }
     else if (c == 0)
     {
@@ -55,15 +69,22 @@ int main()
     }
     else
     {
-        if ((b * b - 4 * a * c) > 0)
-            x = (-1 * b + sqrt(b * b - 4 * a * c)) / (2 * a);
+        if ((D) > 0)
+        {
+            x = (-1 * b + sqrt(D)) / (2 * a);
             cout << "Первый корень равен " << x << endl;
-            x = (-1 * b - sqrt(b * b - 4 * a * c)) / (2 * a);
+            x = (-1 * b - sqrt(D)) / (2 * a);
             cout << "Второй корень равен " << x << endl;
-        else if ((b * b - 4 * a * c) < 0)
-            cout << "Корни невещественные." << endl;
+        }
+        else if ((D) < 0)
+        {
+            cout << "Корней нет" << endl;
+        }
         else
-            x = (-1 * b + sqrt(b * b - 4 * a * c)) / (2 * a);
+        {
+            x = (-1 * b + sqrt(D)) / (2 * a);
             cout << "Корень равен " << x << endl;
+        }
     }
+    return 0;
 }
