@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    double a, b, i, c;
+    double a, b, c, f;
     cout << "Введите число\n";
     cin >> a;
     cout << "Введите степень, в которую хотите возвести число\n";
@@ -13,7 +13,7 @@ int main()
     c = a;
     if (b > 0)
     {
-        for (i = 1; i < b; i++)
+        for (f = 1; f < b; f++)
         {
             c = c * a;
         }
@@ -21,7 +21,7 @@ int main()
     if (b < 0)
     {
         c = 1;
-        for (i = 0; i > b; i--)
+        for (f = 0; f > b; f--)
         {
             c = c * (1 / a);
         }
