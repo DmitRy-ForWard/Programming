@@ -1,0 +1,10 @@
+﻿  Factorial.cpp
+  proekt 23.cpp
+D:\КФУ\Программирование\Programming\Practice\23\С++\proekt 23\proekt 23\proekt 23.cpp(17,16): warning C4305: инициализация: усечение из "double" в "float"
+  Source.cpp
+c1xx : fatal error C1083: Не удается открыть файл источник: Source.cpp: No such file or directory,
+  Source1.cpp
+  Three.cpp
+  Trelor.cpp
+D:\КФУ\Программирование\Programming\Practice\23\С++\proekt 23\proekt 23\Trelor.cpp(9,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
