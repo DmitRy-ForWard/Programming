@@ -14,7 +14,8 @@ void gen_response(const Request& req, Response& ress) {
     Client cli2("http://worldtimeapi.org");
     auto res2 = cli2.Get("/api/timezone/Europe/Simferopol");
     if (res2) {
-        if (res2->status == 200) {
+        if (res2->status == 200) 
+        {
             j2 = json::parse(res2->body);
             unixtime = j2["unixtime"].get<int>();
 
