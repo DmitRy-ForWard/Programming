@@ -34,13 +34,13 @@
 ### Задание 1
  В ходе выполнения лабораторной работы, была загружена последняя версия QT с официального сайта проекта. В процессе установки была выбрана версия `QT 6.0.2` и `MinGW 8.1.0` (Рис. 1).
  
- ![](D:\KFU\Programming\Programming\Lab\04\image)
+ <img src="D:\KFU\Programming\Programming\Lab\04\image\.png"/>
 
 Рис. 1. Выбор версии QT и MinGW
 
 Переходим в папаку "Формы" и меняем значения Input 1", "Input 2", "Output" на "Ввод 1", "Ввод 2" и "Вывод" соответственно. (Рис. 2).
 
-![](D:\KFU\Programming\Programming\Lab\04\image)
+<img src="D:\KFU\Programming\Programming\Lab\04\image\2.png"/>
 
 Рис. 2. Измененные названия параметров.
 
