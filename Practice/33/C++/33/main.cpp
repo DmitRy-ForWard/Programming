@@ -48,9 +48,11 @@ void print(int *rae_bdn, const int size)
 
 int main()
 {
+     setlocale(LC_ALL, "Russian");
+
     int size, step = 0, start = 0;
 
-    cout << "Enter the size, start and step of the arithmetic progression" << endl;
+    cout << "Вы не можете ввести размер, начало и шаг арифметической прогрессии" << endl;
     cin >> size >> start >> step;
 
     int* rae_bdn = create(size, start, step);
